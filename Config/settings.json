@@ -1,0 +1,24 @@
+{
+  "theme": {
+    "font_family": "Segoe UI",
+    "header_color_hex": "1F497D",
+    "stripe_color_hex": "F2F5F8",
+    "alert_color_hex": "FDE9D9",
+    "alert_font_hex": "C00000",
+    "total_color_hex": "E9EDF4"
+  },
+  "prompts": {
+    "system_instruction": "You are an expert Enterprise AI Technical Project Manager and Systems Architect.",
+    "analysis_template": "Analyze this raw technical meeting transcript for the product '{product_name}':\n\n{transcript}\n\nCross-Reference Contextual Internal Rules:\n{internal_context}\n\nCross-Reference Contextual Web Search Rules:\n{web_context}\n\nSynthesize an executive Product Requirement Document (PRD) mapped out across these four explicit subheadings:\n### 1. Executive Summary & Delivery Scope\n### 2. Deep Technical Functional Specifications (Include architectural compliance flags based on context updates)\n### 3. Critical Blockers & Action Matrices (Detail engineering resource dependencies and target schedules)\n### 4. Structural Workflow & CI/CD Architecture Guidelines\n\nKeep descriptions dense, factual, and production-ready."
+  },
+  "complexity_weights": {
+    "low": 16,
+    "medium": 32,
+    "high": 60
+  },
+  "mock_internal_kb": [
+    "Enterprise Security Standard: All network data payload matrices must utilize AES-256 encryption configurations.",
+    "DevOps Pipeline Compliance: All containerized environments must deploy on isolated Docker staging architectures with GitHub Actions lint checks.",
+    "Authentication Mandate: User-facing portals must run multi-factor authentication (MFA) via integrated SMS routing hooks."
+  ]
+}
